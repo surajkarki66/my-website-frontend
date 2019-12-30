@@ -258,3 +258,61 @@ header {
     width: auto;
     margin: 5px 0;
 }
+
+
+/* Motivation */
+
+.section-motivation {
+    margin-top: 2px;
+    background-color:#e5e8e6;
+}
+
+.section-motivation .row h2 {
+    color: black;
+    position: relative;
+    text-align: center;
+    font-family: 'Girassol', cursive;
+    font-size: 40px;
+    
+
+}
+
+.author {
+    height: 400px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.quote-text {
+    color: black;
+    margin-left:20%;
+    letter-spacing: 1px;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.name-text {
+    font-size: 48px;
+    margin-left:20%;
+    color: #0094ff;
+    margin-top: 14%;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.quote-text,
+.name-text {
+
+    font-family: 'Tangerine', serif;
+    font-weight: 300;
+    font-size: 50px;
+
+
+}
+
+.pen {
+    left: 50px;
+    height: 40px;
+    width: auto;
+    margin-top: 5px;
+
+}
