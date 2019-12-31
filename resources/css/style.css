@@ -77,8 +77,8 @@ h2 {
 }
 
 h3 {
-    font-size: 110%;
-    margin-bottom: 25px;
+    font-size: 70%;
+    margin-bottom: 27px;
 }
 
 
@@ -136,9 +136,19 @@ header {
     font-weight: 300;
     text-decoration: none;              
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+    border-radius: 2px;
 
     
 }
+
+
+.btn:hover,
+.btn:active {
+    background-color: #22bbe5
+
+    
+}  
+
 
 
 
@@ -149,30 +159,31 @@ header {
     color: #fff;
     top: 88%;
     left: 44%;
-    border-radius: 20px;
-
-   
-   
-    
-
-
 }
-
-.btn:hover,
-.btn:active {
-    background-color: #cf6d17;
-
-    
-}  
 
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #e67e22;
+    border: 1px solid #22bbe5;
+    background-color: #22bbe5;
     
 
     
 }  
+
+.btn-question:link,
+.btn-question:visited {
+    position: relative;
+    color: #fff;
+    margin-top: 8%;
+    left: 38%;
+    border: 1px solid #22bbe5
+
+
+
+}
+
+
 
 
 /* Main navi */
@@ -180,14 +191,14 @@ header {
 .main-nav-one {
     float: right;
     list-style: none;
-    margin-top: 65px;
+    margin-top: 50px;
 }
 
  
 .main-nav-two {
     float: left;
     list-style: none;
-    margin-top: 65px;
+    margin-top: 50px;
     
 }
 
@@ -207,7 +218,7 @@ header {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 90%;
+    font-size: 85%;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
 }
@@ -219,7 +230,7 @@ header {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 90%;
+    font-size: 85%;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
 }
@@ -242,11 +253,12 @@ header {
 
 /* Icons */
 .logo{
+    position: relative;
     height: 155px;
     width: auto;
     margin-top: 20px;   
     border-radius: 70px;
-    margin-left: 140px;
+    left: 13.6%;
     text-align: center;
 
 
@@ -315,4 +327,36 @@ header {
     width: auto;
     margin-top: 5px;
 
+}
+
+
+/* Help */
+
+.section-help {
+    background-color: #e5e8e6;
+    margin-top: 2px;
+    background-color: black ;
+
+}
+
+.row h3 {
+    font-family: 'Lato' , 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.row h1 {
+    text-align: center;
+    font-family: 'Lato' , 'Arial', sans-serif;
+}
+
+.icon-question {
+    height: 50px;
+    position: relative;
+    width: auto;
+    left: 48%;
+    margin-bottom: 20px;
+    margin-top: 1px;
+    bottom: 20px;
+    display: block;
 }
