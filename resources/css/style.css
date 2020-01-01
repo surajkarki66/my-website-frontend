@@ -20,6 +20,16 @@ html {
 }
 
 
+.clearfix {zoom:1}
+.clearfix:after {
+    content: '.';   
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
 
 
 /* ----------------------------------------------------- */
@@ -155,10 +165,11 @@ header {
 .btn-full:link,
 .btn-full:visited {
     position: absolute;
-    background-color: #0094ff;
-    color: #fff;
+    color: #22bbe5;
     top: 88%;
     left: 44%;
+    border: 1px solid #0094ff;
+    font-size: 16px;
 }
 
 
@@ -166,6 +177,7 @@ header {
 .btn-full:active {
     border: 1px solid #22bbe5;
     background-color: #22bbe5;
+    color: black;
     
 
     
@@ -177,10 +189,58 @@ header {
     color: #fff;
     margin-top: 8%;
     left: 38%;
-    border: 1px solid #22bbe5
+    border: 1px solid #22bbe5;
+    font-size: 16px;
 
 
 
+}
+
+.btn-question:hover,
+.btn-question:active {
+    color: black;
+
+
+
+}
+
+
+.btn-life:link,
+.btn-life:visited {
+    position: relative;
+    color:#22bbe5;
+    left: 38%;
+    border: 1px solid #22bbe5;
+    font-size: 16px;
+
+
+
+}
+
+
+.btn-life:hover,
+.btn-life:active {
+   color: black;
+
+
+
+}
+
+.btn-blog:link,
+.btn-blog:visited {
+    position: relative;
+    color:black ;
+    left: 38%;
+    border: 1px solid black;
+    font-size: 16px;
+    top: 60px;
+    
+}
+
+.btn-blog:hover,
+.btn-blog:active {
+    color: white;
+    border: 1px solid #22bbe5;
 }
 
 
@@ -347,7 +407,7 @@ header {
 
 .row h1 {
     text-align: center;
-    font-family: 'Lato' , 'Arial', sans-serif;
+    font-family: 'Girassol', cursive;
 }
 
 .icon-question {
@@ -359,4 +419,115 @@ header {
     margin-top: 1px;
     bottom: 20px;
     display: block;
+}
+
+/* Life */
+
+.section-life {
+    margin-top: 2px;
+    padding: 0;
+
+}
+
+.life-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.life-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+
+}
+
+.life-photo {
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+.life-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0.7;
+
+    
+}
+
+.life-photo img:hover {
+    
+    transform: scale(1.03);
+    opacity: 1;
+    
+}
+
+
+.section-life .row {
+    margin-top: 9%;
+    margin-bottom: 3%;
+}
+
+.section-life .row h1 {
+    color: black;
+    text-align: center;
+
+}
+
+
+/* blog */
+
+.section-blog {
+    background-color:#e5e8e6;   
+}
+
+.section-blog .row h1 {
+    position: relative;
+    font-family: 'Girassol', cursive;
+    text-align: center;
+    bottom: 40px;
+
+}
+
+.blog-photo {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+
+}
+
+.blog-photo img {
+    width: 100%;
+    height: auto;
+   
+}
+
+
+.blog h2{
+    color: black;
+    position: relative;
+    top: 30px;
+    font-family: 'Lato' , 'Arial', sans-serif;
+    line-height: 145%;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.blog h3 {
+    position: relative;
+    top: 20px;
+    color:#0094ff; 
+    font-family: 'Girassol', cursive;
+    margin: 0;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.blog a {
+    text-decoration: none;
 }
