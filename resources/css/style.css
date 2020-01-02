@@ -278,7 +278,7 @@ header {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 85%;
+    font-size: 75%;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
 }
@@ -290,15 +290,15 @@ header {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 85%;
+    font-size: 75%;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
 }
 
 .main-nav-one li a:hover,
 .main-nav-one li a:active {
-    border-bottom: 3px solid #0094ff;
-    border-top: 3px solid #0094ff;
+    border-bottom: 1px solid #0094ff;
+    border-top: 1px solid #0094ff;
    
 }
 
@@ -314,12 +314,13 @@ header {
 /* Icons */
 .logo{
     position: relative;
-    height: 155px;
+    height: 175px;
     width: auto;
     margin-top: 20px;   
-    border-radius: 70px;
-    left: 13.6%;
-    text-align: center;
+    border-radius: 50px;
+    left: 14.5%;
+    border: 3px solid white;
+    
 
 
 }
@@ -530,4 +531,125 @@ header {
 
 .blog a {
     text-decoration: none;
+}
+
+
+
+/* Footer */
+
+
+footer {
+    background-color: rgb(49, 47, 47);
+    padding: 50px;
+    font-size: 80%;
+    
+}
+
+.footer-nav-first {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.footer-nav-first li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.footer-nav-first li a:link,
+.footer-nav-first li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: white;
+    transition: color 0.2s;
+    font-size: 80%;
+    font-family:'Lato' , 'Arial', sans-serif;   
+    letter-spacing: 2px;
+
+}
+
+
+.footer-nav-first li a:hover,
+.footer-nav-first li a:active {
+    text-decoration: none;
+    border: 0;
+    color: #0094ff;
+   
+
+}
+
+
+
+.social-links {
+    text-align: center;
+}
+
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+
+.social-links img {
+    height: 50px;
+    position: relative;
+    width: auto;
+    bottom: 20px;
+    display: block;
+   
+    
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: rgb(63, 60, 60);
+    transition: color 0.2s;
+    font-size: 160%;
+
+}
+
+.social-links li a img {
+    transition: color 0.2s;
+    border: 1px solid black;
+    border-radius: 30px;
+
+}
+
+.social-instagram:hover {
+    background-color:  #458eff;
+    border:1px solid  #fb3958;
+
+}
+
+.social-github:hover {
+    background-color: white;
+    border-radius: 18px;
+}
+
+.social-google:hover {
+    background-color: #c02626;
+    border:1px solid white;
+}
+
+.social-twitter:hover {
+    background-color: white;
+    border:1px solid white;
+}
+
+.social-linkedin:hover {
+    background-color: white;
+    border:1px solid white;
+
+}
+
+.footer-last{
+    text-align: center;
+    margin-top:50px;
+    font-family:'Lato' , 'Arial', sans-serif;   
+    color: black;
+
 }
