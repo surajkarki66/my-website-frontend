@@ -653,3 +653,40 @@ footer {
     color: black;
 
 }
+
+
+
+/* ----------------------------------------------------- */
+/* -------- Portfolio page --------*/
+/* -----------------------------------------------------*/
+
+.header-portfolio {
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/portfolio1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+.portfolio-heading {
+    color: white;
+    text-transform: none;
+    font-family: 'Girassol', cursive;
+}
+
+.portfolio-logo {
+    border: 3px solid #0094ff;
+}
+
+.logo-portfolio {
+    text-align: center;
+
+}
+
+.logo-portfolio img {
+    position: relative;
+    top: 120px;
+    height: 80px;
+    width: auto;
+}
