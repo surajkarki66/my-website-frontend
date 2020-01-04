@@ -137,7 +137,8 @@ header .row {
 /* -----------------------------------------------------*/
 
 .btn:link,  
-.btn:visited {
+.btn:visited,
+input[type=submit]{
     position: relative;
     display: inline-block;
     padding: 10px 30px;
@@ -151,7 +152,7 @@ header .row {
 
 
 .btn:hover,
-.btn:active {
+.btn:active{
     background-color: #22bbe5
 
     
@@ -161,7 +162,8 @@ header .row {
 
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit]{
     position: relative;
     color: #22bbe5;
     border: 1px solid #0094ff;
@@ -170,7 +172,7 @@ header .row {
 
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active{
     border: 1px solid #22bbe5;
     background-color: #22bbe5;
     color: black;
@@ -842,3 +844,136 @@ footer {
     
 }
 
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+.section-resume h2 {
+    color: black;
+    text-align: center;
+
+}
+
+.plan-box h1 {
+    color: black;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-right: 60px;
+}
+
+.plan-box h2 {
+    color: black;
+    font-size: 20px;
+}
+
+
+
+.plan-box div:last-child {
+    text-align: center;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+ .plan-box ul {
+    list-style: none;
+    background-color:#ddebe2;
+    color: black;
+    
+ }
+
+ .plan-box ul li {
+     padding: 5px 0;
+ }
+
+
+
+
+/* ----------------------------------------------------- */
+/* -------- Contact Page --------*/
+/* -----------------------------------------------------*/
+
+.header-contact {
+
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+.header-contact .row {
+    margin-top: 120px;
+
+}
+
+.header-contact .row h1{
+   
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+
+}
+
+
+/* ----------------------------------------------------- */
+/* --------Contact form--------*/
+/* -----------------------------------------------------*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto; 
+    color: black;
+    font-family: 'Girassol', cursive;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius:3px;
+    border: 1px solid black;
+    color: black;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+input[type=checkbox] {
+    margin:10px 5px 10px 0;
+
+
+}
+
+*:focus {outline: none;}
+
+.section-form h2 {
+    color: black;
+    font-family: 'Girassol', cursive;
+    font-size: 50px;
+}
+
+input[type=submit] {
+    color: black;
+    background-color: white;
+}
+
+.back {
+    background: #ddebe2;
+    border-radius: 10px;
+}
