@@ -464,6 +464,7 @@ header {
     
     transform: scale(1.03);
     opacity: 1;
+
     
 }
 
@@ -670,7 +671,7 @@ footer {
 }
 
 .portfolio-heading {
-    color: white;
+    color: #e5e8e6;
     text-transform: none;
     font-family: 'Girassol', cursive;
 }
@@ -681,7 +682,6 @@ footer {
 
 .logo-portfolio {
     text-align: center;
-
 }
 
 .logo-portfolio img {
@@ -689,4 +689,78 @@ footer {
     top: 120px;
     height: 80px;
     width: auto;
+}
+
+.section-portfolio {
+    top: 2px;
+    background-color: #ccd1ce;
+    
+}
+
+.portfolio-text {
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+
+.container {
+    position: relative;
+    height: 100%;
+    background-color: rgb(22, 22, 22);
+    border-radius: 10px;
+  
+  }
+  
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility:hidden;
+    border-radius: 10px;
+   
+   
+    
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #0094ff;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 4px;
+}
+
+
+.text a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-portfolio .row{
+    margin-top: 15px;
 }
