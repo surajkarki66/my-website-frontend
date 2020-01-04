@@ -62,6 +62,7 @@ h3{
 
     font-weight: 300;
     text-transform: uppercase;
+    text-align: center;
    
     
 }
@@ -108,27 +109,23 @@ header {
 
 }
 
-
-.hero-text-box {
-    position:absolute;
-    width: 1140px;
-    top: 73%;
-    left:8%;
-
+header .row {
+    margin-top: 250px;
 }
 
-
-.hero-text-box h1 {
+.row h1 {
+    position: relative;
     margin-bottom: 1%;
     text-align: center;
 }
 
-.hero-text-box h2 {
+.row h2 {
+    position: relative;
     word-spacing: 3px;
     letter-spacing: 1px;
     color: white;
     text-align: center;
-    top: 30px;
+   
 
 }
 
@@ -141,6 +138,7 @@ header {
 
 .btn:link,  
 .btn:visited {
+    position: relative;
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -164,10 +162,8 @@ header {
 
 .btn-full:link,
 .btn-full:visited {
-    position: absolute;
+    position: relative;
     color: #22bbe5;
-    top: 88%;
-    left: 44%;
     border: 1px solid #0094ff;
     font-size: 16px;
 }
@@ -188,7 +184,6 @@ header {
     position: relative;
     color: #fff;
     margin-top: 8%;
-    left: 38%;
     border: 1px solid #22bbe5;
     font-size: 16px;
 
@@ -247,18 +242,26 @@ header {
 
 
 /* Main navi */
+
+nav {
+    text-align: center;
+}
     
 .main-nav-one {
+    position: relative;
     float: right;
     list-style: none;
     margin-top: 50px;
+    right: 10%;
 }
 
  
 .main-nav-two {
+    position: relative;
     float: left;
     list-style: none;
     margin-top: 50px;
+    left: 8%;
     
 }
 
@@ -316,10 +319,10 @@ header {
     position: relative;
     height: 175px;
     width: auto;
-    margin-top: 20px;   
+    margin-top: 10px;   
     border-radius: 50px;
-    left: 14.5%;
     border: 3px solid white;
+   
     
 
 
@@ -532,6 +535,7 @@ header {
 
 .blog a {
     text-decoration: none;
+    text-align: center;
 }
 
 
@@ -670,10 +674,23 @@ footer {
 
 }
 
+
+
+.hero-text-box .row h1 {
+    color: white;
+    position: relative;
+    text-align: center;
+    font-family: 'Girassol', cursive;
+    font-size: 40px;
+    
+
+}
+
 .portfolio-heading {
     color: #e5e8e6;
     text-transform: none;
     font-family: 'Girassol', cursive;
+    margin-top: 170px;
 }
 
 .portfolio-logo {
@@ -686,7 +703,6 @@ footer {
 
 .logo-portfolio img {
     position: relative;
-    top: 120px;
     height: 80px;
     width: auto;
 }
@@ -700,7 +716,9 @@ footer {
 .portfolio-text {
     margin-top: 3%;
     margin-bottom: 2%;
+    color: black;
 }
+
 
 
 .container {
@@ -764,3 +782,63 @@ footer {
 .section-portfolio .row{
     margin-top: 15px;
 }
+
+
+
+
+
+/* ----------------------------------------------------- */
+/* -------- resume page --------*/
+/* -----------------------------------------------------*/
+
+
+
+
+.header-resume {
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/portfolio1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+
+.resume-heading {
+    position: relative; 
+    color: #e5e8e6;
+    text-transform: none;
+    font-family: 'Girassol', cursive;
+    margin-top: 60px;
+   
+}
+
+.resume-second {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.logo-resume {
+    text-align: center;
+}
+
+.logo-resume img {
+    position: relative;
+    height: 55px;
+    width: auto;
+    border-radius: 120px;
+    margin-top: 30px;
+
+}
+.resume-btn {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.resume {
+    position: relative;
+    
+}
+
