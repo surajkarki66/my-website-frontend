@@ -99,6 +99,14 @@
         padding: 0 4%;
         top: 70%;
     }
+    .hero-text-box h1 {
+       position: relative;
+       bottom: 70px;
+    }
+
+    .hero-text-box h2 {
+        color: white;
+    }
 
     .col {width: 100%;}  /* col stacked one by one */
     .main-nav {display: none;}
@@ -236,6 +244,17 @@
 
 @media only screen and (max-width: 480px) {
 
+    .hero-text-box h1 {
+        position: relative;
+        bottom: 70px;
+        font-size: 30px;
+     }
+ 
+     .hero-text-box h2 {
+         color: #22bbe5
+     }
+ 
+
     .section-motivation .row h2 {
        
         font-family: 'Girassol', 'Arial';
@@ -257,7 +276,7 @@
     }
 
     .icon-question {
-        left: 150px;
+        left: 135px;
     }
 
     .section-life .row h1 {
