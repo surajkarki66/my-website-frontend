@@ -10,13 +10,14 @@
 
 }
 
-html {
+html,body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato' , 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 
@@ -94,6 +95,19 @@ h3 {
 
 
 
+/* Paragraphs */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 20%;
+    letter-spacing: 1px;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+    color: black;
+    font-family: 'Tangerine','Girassol', 'Arial';
+    margin-top: 10%;
+}   
 
 
  /* Header */
@@ -109,17 +123,27 @@ header {
 
 }
 
-header .row {
-    margin-top: 250px;
+
+
+.hero-text-box {
+    position:absolute;
+    width: 1140px;
+    top: 80%;
+    left:50%;
+    
+    transform: translate(-50%,-50%);
+
 }
 
-.row h1 {
+.hero-text-box h1 {
     position: relative;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
     text-align: center;
+    font-family:'Girassol', 'Arial';
 }
 
-.row h2 {
+
+.hero-text-box h2 {
     position: relative;
     word-spacing: 3px;
     letter-spacing: 1px;
@@ -167,7 +191,7 @@ input[type=submit]{
     position: relative;
     color: #22bbe5;
     border: 1px solid #0094ff;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 
@@ -225,12 +249,13 @@ input[type=submit]{
 
 .btn-blog:link,
 .btn-blog:visited {
-    position: relative;
+  
     color:black ;
-    left: 38%;
     border: 1px solid black;
-    font-size: 16px;
+    font-size: 15px;
     top: 60px;
+    margin-left: 450px;
+    margin-top: 10px;
     
 }
 
@@ -248,91 +273,56 @@ input[type=submit]{
 nav {
     text-align: center;
 }
-    
-.main-nav-one {
-    position: relative;
+.main-nav {
     float: right;
     list-style: none;
-    margin-top: 50px;
-    right: 10%;
+    margin-top: 55px;
 }
 
- 
-.main-nav-two {
-    position: relative;
-    float: left;
-    list-style: none;
-    margin-top: 50px;
-    left: 8%;
-    
-}
-
-.main-nav-one li {
-    display: inline-block;
-    margin-left: 40px;
-
-}
-.main-nav-two li {
+.main-nav li {
     display: inline-block;
     margin-left: 40px;
 }
 
-.main-nav-one li a:link,
-.main-nav-one li a:visited {
+.main-nav li a:link,
+.main-nav li a:visited {
     padding: 8px 0;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 75%;
+    font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
-
-.main-nav-two li a:link,
-.main-nav-two li a:visited {
-    padding: 8px 0;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 75%;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s;
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #0094ff
 }
 
-.main-nav-one li a:hover,
-.main-nav-one li a:active {
-    border-bottom: 1px solid #0094ff;
-    border-top: 1px solid #0094ff;
-   
-}
-
-
-.main-nav-two li a:hover,
-.main-nav-two li a:active {
-   
-    color: #0094ff;
-    
-}
 
 
 /* Icons */
+
 .logo{
-    position: relative;
-    height: 175px;
+    height: 140px;
     width: auto;
-    margin-top: 10px;   
-    border-radius: 50px;
+    float: left;    
+    margin-top: 20px;
     border: 3px solid white;
-   
-    
+    border-radius: 70px;
 
 
 }
+    
+
+
+
 
 .logo-blue {
     left: 50px;
-    height: 40px;
+    height: 30px;
     width: auto;
     margin: 5px 0;
 }
@@ -349,7 +339,7 @@ nav {
     color: black;
     position: relative;
     text-align: center;
-    font-family: 'Girassol', cursive;
+    font-family: 'Girassol', 'Arial';
     font-size: 40px;
     
 
@@ -361,13 +351,6 @@ nav {
     border-radius: 10px;
 }
 
-.quote-text {
-    color: black;
-    margin-left:20%;
-    letter-spacing: 1px;
-    font-size: 48px;
-    text-shadow: 4px 4px 4px #aaa;
-}
 
 .name-text {
     font-size: 48px;
@@ -377,10 +360,10 @@ nav {
     text-shadow: 4px 4px 4px #aaa;
 }
 
-.quote-text,
+
 .name-text {
 
-    font-family: 'Tangerine', serif;
+    font-family: 'Tangerine', 'Arial';
     font-weight: 300;
     font-size: 50px;
 
@@ -413,7 +396,7 @@ nav {
 
 .row h1 {
     text-align: center;
-    font-family: 'Girassol', cursive;
+    font-family: 'Girassol', 'Arial';
 }
 
 .icon-question {
@@ -488,15 +471,20 @@ nav {
 
 /* blog */
 
+.blog{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 .section-blog {
     background-color:#e5e8e6;   
 }
 
 .section-blog .row h1 {
     position: relative;
-    font-family: 'Girassol', cursive;
+    font-family: 'Girassol', 'Arial';
     text-align: center;
-    bottom: 40px;
+    margin-bottom: 30px;
 
 }
 
@@ -520,7 +508,8 @@ nav {
     position: relative;
     top: 30px;
     font-family: 'Lato' , 'Arial', sans-serif;
-    line-height: 145%;
+    font-size: 20px;
+    line-height: 130%;
     text-decoration: none;
     margin-bottom: 0;
 }
@@ -529,7 +518,7 @@ nav {
     position: relative;
     top: 20px;
     color:#0094ff; 
-    font-family: 'Girassol', cursive;
+    font-family: 'Girassol', 'Arial';
     margin: 0;
     letter-spacing: 1px;
     margin-bottom: 0;
@@ -682,17 +671,25 @@ footer {
     color: white;
     position: relative;
     text-align: center;
-    font-family: 'Girassol', cursive;
-    font-size: 40px;
+    font-family: 'Girassol', 'Arial';
+  
     
 
 }
 
 .portfolio-heading {
+    position: relative;
     color: #e5e8e6;
     text-transform: none;
-    font-family: 'Girassol', cursive;
-    margin-top: 170px;
+    font-family: 'Girassol', 'Arial';
+    margin-top: 10px;
+    bottom: 60px;
+}
+
+.hero-text-box h2 {
+    color: #22bbe5;
+    position: relative;
+    bottom: 70px;
 }
 
 .portfolio-logo {
@@ -707,6 +704,7 @@ footer {
     position: relative;
     height: 80px;
     width: auto;
+    
 }
 
 .section-portfolio {
@@ -725,7 +723,7 @@ footer {
 
 .container {
     position: relative;
-    height: 100%;
+    height: 100%;;
     background-color: rgb(22, 22, 22);
     border-radius: 10px;
   
@@ -810,9 +808,12 @@ footer {
     position: relative; 
     color: #e5e8e6;
     text-transform: none;
-    font-family: 'Girassol', cursive;
-    margin-top: 60px;
+    font-family: 'Girassol', 'Arial';
    
+}
+
+.row-resume {
+    margin-top: 100px;
 }
 
 .resume-second {
@@ -824,6 +825,7 @@ footer {
 
 .logo-resume {
     text-align: center;
+    margin-top: 20px;
 }
 
 .logo-resume img {
@@ -866,7 +868,7 @@ footer {
 }
 
 .plan-box h2 {
-    color: black;
+    color: #22bbe5;
     font-size: 20px;
 }
 
@@ -892,6 +894,8 @@ footer {
 
  .plan-box ul li {
      padding: 5px 0;
+     text-align: justify;
+     margin-left: 15px;
  }
 
 
@@ -911,10 +915,6 @@ footer {
 
 }
 
-.header-contact .row {
-    margin-top: 120px;
-
-}
 
 .header-contact .row h1{
    
@@ -935,7 +935,7 @@ footer {
     width: 60%;
     margin: 0 auto; 
     color: black;
-    font-family: 'Girassol', cursive;
+    font-family: 'Girassol', 'Arial';
 }
 
 input[type=text],
@@ -964,7 +964,7 @@ input[type=checkbox] {
 
 .section-form h2 {
     color: black;
-    font-family: 'Girassol', cursive;
+    font-family: 'Girassol', 'Arial';
     font-size: 50px;
 }
 

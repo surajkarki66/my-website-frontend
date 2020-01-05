@@ -1,0 +1,323 @@
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+
+    body{font-size: 18px;}
+
+    section {padding: 60px, 0;}
+
+    .author {
+        height: 300px;
+        width: auto;
+    }
+    .name-text {
+        font-size: 20px;
+    }
+    .long-copy {
+        width: 80%;
+        margin-left: 20%;
+
+    }
+
+
+    .name-text {
+
+        font-family: 'Tangerine', 'Arial';
+        font-weight: 300;
+        font-size: 50px;
+
+
+    }
+
+
+    .btn-blog:link,
+    .btn-blog:visited {
+    
+        color:black ;
+        border: 1px solid black;
+        font-size: 15px;
+        top: 60px;
+        margin-left: 240px;
+        margin-top: 10px;
+        
+    }
+
+    .btn-blog:hover,
+    .btn-blog:active {
+        color: white;
+        border: 1px solid #22bbe5;
+    }
+
+
+
+    .btn-life:link,
+    .btn-life:visited {
+        position: relative;
+        color:#22bbe5;
+        border: 1px solid #22bbe5;
+        font-size: 16px;
+        left: 240px;
+
+
+
+    }
+
+
+    .btn-life:hover,
+    .btn-life:active {
+    color: black;
+
+
+
+    }
+
+
+        
+
+        
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    body {font-size: 16px;}
+    section {padding: 30px 0;}
+
+    .row,
+    .hero-text-box {
+        padding: 0 4%;
+        top: 70%;
+    }
+
+    .col {width: 100%;}  /* col stacked one by one */
+    .main-nav {display: none;}
+    .logo {
+        height: 120px;
+        width: auto;
+    }
+
+    .long-copy {
+        width: 100%;
+        margin-left:0%;
+    }
+
+    .author {
+        width: 100%;
+        height: auto;
+    }
+
+        
+    .icon-question {
+        height: 40px;
+        position: relative;
+        width: auto;
+        left: 210px;
+        margin-bottom: 20px;
+        margin-top: 1px;
+        
+       
+    }
+
+    .section-help h1 {
+        font-size: 25px;
+    }
+        
+    .btn-question:link,
+    .btn-question:visited {
+       font-size: 12px;
+
+
+
+    }
+
+
+    .section-life .row h1 {
+      font-size: 27px;
+
+    }
+    .life-showcase li{width: 100%;      
+                      margin-top: 10px;
+                      border: 1px solid black;
+                      }  /* stick*/
+
+
+    .btn-life:link,
+    .btn-life:visited {
+        position: relative;
+        color:#22bbe5;
+        border: 1px solid #22bbe5;
+        font-size: 12px;
+        left: 128px;
+
+
+
+    }
+
+
+    .btn-life:hover,
+    .btn-life:active {
+    color: black;
+
+                  
+                  
+    }
+
+
+    .section-blog .row h1 {
+       font-size: 27px;
+
+    }
+
+
+
+    .blog-photo img {
+        border-radius: 20px;
+        height: 300px;
+        width: 100%;
+    }
+
+    .blog {
+        margin-bottom: 60px;
+    }
+
+    .btn-blog:link,
+    .btn-blog:visited {
+        position: relative;
+        font-size: 12px;
+        margin-left: 0px;
+        margin-top: 0px;
+        top:20px;
+        left: 130px;
+    }
+
+    .section-blog .row h1 {
+        margin-bottom: 10px;
+    }
+
+    .plan-box h1 {
+        margin-left: 80px;
+    }
+
+    .plan-box h2 {
+        position: relative;
+        color: #22bbe5;
+        margin-bottom: 0px;
+        margin-top: 10px;
+        top: 20px;
+    }
+
+
+    .plan-box ul li {
+       text-align: start;
+    }
+
+    .portfolio-text {
+        font-size: 25px;
+    }
+
+   
+
+
+   
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+    .section-motivation .row h2 {
+       
+        font-family: 'Girassol', 'Arial';
+        font-size: 25px;
+        
+    
+    }
+
+    .long-copy,
+    .name-text {
+        font-size: 35px;
+    }
+
+
+    .row h1 {
+        text-align: center;
+        font-family: 'Girassol', 'Arial';
+        font-size: 20px;
+    }
+
+    .icon-question {
+        left: 150px;
+    }
+
+    .section-life .row h1 {
+        font-size: 20px;
+    }
+
+
+
+
+    .btn-blog:link,
+    .btn-blog:visited {
+        position: relative;
+        font-size: 12px;
+        top:20px;
+        left: 70px;
+    }
+
+    .btn-life:link,
+    .btn-life:visited {
+        position: relative;
+        color:#22bbe5;
+        border: 1px solid #22bbe5;
+        font-size: 12px;
+        left: 70px;
+
+
+
+    }
+
+    input {
+        position: relative;
+        left: 40px;
+    }
+
+   
+
+    .social-links li {
+        display: inline-table;
+        margin-right: 20px;
+
+    }
+
+
+    .section-form h2 {
+        color: black;
+        font-family: 'Girassol', 'Arial';
+        font-size: 25px;
+    }
+
+    .portfolio-heading {
+        font-size: 29px;
+    }
+
+    .portfolio-heading {
+        font-size: 18px;
+    }
+
+    .image {
+        margin-bottom: 30px;
+    }
+
+
+}

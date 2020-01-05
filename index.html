@@ -3,12 +3,14 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is the personal website of SurajKarki"/>
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -24,31 +26,29 @@
 
         
       <nav>
+        <div class="row">
+          <img src="resources/img/customer-3.jpg" alt="Omnifood logo" class="logo">
+       <!--- <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black"> -->
+          <ul class="main-nav js--main-nav">
+
+              <li><a href="#">Home</a></li> <!-- navbar is the collection of links-->
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Resume</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+
+
+          </ul>
+
+
+
+      </div>
        
     
            
 
             
-              <ul class="main-nav-one">
-
-               
-                <li><a href="#">blogs</a></li>
-                <li><a href="index.html">home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-
-
-             </ul>
-             
-            
-            <img src="resources/img/customer-3.jpg" alt="surajkarki logo" class="logo">
-
-            <ul class="main-nav-two">
-
-              <li><a href="#">about</a></li> 
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="resume.html">Resume</a></li>
-      
-             </ul>
+           
               
             
            
@@ -63,7 +63,7 @@
         
 
          
-          <div class="row">
+          <div class="hero-text-box">
            
                 <h1>
                  
@@ -72,7 +72,7 @@
                   <img src="resources/img/quote 2.png" class="logo-blue"></img>
               
                 </h1>
-               <h2>Proffestional Software Developer & Machine Learning Enthusiastic</h2>
+               <h2>(Proffestional Software Developer & Machine Learning Enthusiastic)</h2>
                <p style="text-align: center;">
                <a class="btn btn-full" href="#">HIRE ME</a>
               </p>
@@ -98,11 +98,9 @@
                   </div>
                   <div class="col span-2-of-3">
                     
-                      <p class="quote-text"><img src="resources/img/quote.png" class="logo-blue"></img>
-                         When you say 'I wrote a program that crashed Windows,
-                        ' people just stare at you blankly and say 'Hey,
-                         I got those with the system,
-                         for free.
+                      <p class="long-copy"><img src="resources/img/quote.png" class="logo-blue"></img>
+                         A computer is like air condtioning,
+                         if you open window it becomes useless
                          <img src="resources/img/quote 2.png" class="logo-blue"></img>
                         
                       </p>
@@ -285,13 +283,11 @@
       
 
            <a href="#"><img src="resources/img/7.jpg" alt="blog"></a>
-           
-
-
+          
           </figure>
 
-          <h3>Bussiness</h3>
-         <a href="#"><h2>I am a software developer, who takes coding as bussiness.</h2></a>
+        
+         
 
              
        
@@ -304,9 +300,7 @@
              <a href="#"><img src="resources/img/7.jpg" alt="blog"></a>
 
           </figure>
-          <h3>Technology</h3>
-          <a href="#"><h2>I am a software developer, who takes coding as technology.</h2></a>
-
+         
              
       
     
@@ -320,16 +314,13 @@
 
              
           </figure>
-          <h3>Science</h3>
-          <a href="#"><h2>I am a software developer, who takes coding as science.</h2></a>
-          
+         
         </div>
-
         <div class="row">
 
-         <a class="btn btn-blog" href="#">VIEW MORE BLOG</a>
 
-       </div>
+          <a class="btn btn-blog" href="#">VIEW MORE BLOG</a>
+        </div>
 
       </div>
 
