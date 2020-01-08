@@ -7,13 +7,14 @@
     <meta name="description" content="This is the personal website of SurajKarki"/>
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>SurajKarki</title>
 
 
@@ -28,18 +29,19 @@
           
         <nav>
             <div class="row">
-              <img src="resources/img/customer-3.jpg" alt="Omnifood logo" class="logo">
-           <!--- <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black"> -->
+              <img src="resources/img/customer-3.jpg" alt="Suraj logo" class="logo">
+              <img src="resources/img/customer-3.jpg" alt="Suraj logo" class="logo-black">
               <ul class="main-nav js--main-nav">
     
-                  <li><a href="index.html">Home</a></li> <!-- navbar is the collection of links-->
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Resume</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="resume.html">Resume</a></li>
                   <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="contact.html">Contact</a></li>
     
     
               </ul>
+             <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
     
     
     
@@ -71,14 +73,13 @@
              
               <img src="resources/img/quote.png" class="logo-blue"></img>
               Hey! Connect with me
-              <img src="resources/img/quote 2.png" class="logo-blue"></img>
-          
+              <h1 style="font-size: 30px;">
+              <span class="typer" id="main" data-words="For More Information,About Me" data-colors="#0094ff" data-delay="100" data-deleteDelay="300"></span>
+                <span class="cursor" data-owner="main"></span>
             </h1>
-           <h2>(Proffestional Software Developer & Machine Learning Enthusiastic)</h2>
-          
-          
-             
-             
+
+            </h1>
+    
                
 
     </div>
@@ -86,17 +87,17 @@
      </header>
 
 
-    <section class="section-form">
-        <div class="row">
+    <section class="section-form js--section-motivation">
+        <div class="row js--wp-3">
             <h2>i am here to support you</h2>
         </div>
-        <div class="row back">
+        <div class="row back js--wp-6">
             <form method="post" action="#" class="contact-form">
                 <div class="row">
-                    <div class="col span-1-of-3">   <!--take 1/3 part of the whole row-->
-                        <label for="name">Name</label><!--for attr do when we click the name level the name field gets selected-->
+                    <div class="col span-1-of-3">   
+                        <label for="name">Name</label>
                     </div>
-                    <div class="col span-2-of-3">  <!--Take 2/3 part of the whole row-->
+                    <div class="col span-2-of-3"> 
                         <input type="text" name="name" id="name" placeholder="Your name" required>
 
                     </div>
@@ -156,46 +157,55 @@
      
 
 
-
     <footer>
 
-      <div class="row">
-        <ul class="social-links">
-       
-          <li><a href="#"><img class="social-github" src="resources/img/github.png"></img></a></li>
-          <li><a href="#"><img class="social-instagram" src="resources/img/instagram.png"></img></a></li>
-          <li><a href="#"><img class="social-google" src="resources/img/gmail-logo.png"></img></a></li>
-          <li><a href="#"><img class="social-twitter" src="resources/img/twitter.png"></img></a></li>
-          <li><a href="#"><img class="social-linkedin" src="resources/img/linkedin.png"></img></a></li>
-
-        </ul>
-
-        <ul class="footer-nav-first">
-
-          <li><a href="#">BLOG &nbsp;</a></li>
-          <li><a href="#">HOME &nbsp;</a></li>
-          <li><a href="#">CONTACT &nbsp;</a></li>
-          <li><a href="#">ABOUT &nbsp;</a></li>
-          <li><a href="#">PORTFOLIO &nbsp;</a></li>
-          <li><a href="#">RESUME &nbsp;</a></li>  
-          
-        </ul>
-
-
-
-
         <div class="row">
-          <p class="footer-last">
-              Copyright &copy; 2020 by SurajKarki. All rights reserved.
-          </p>
+          
+          <ul class="social-links">
+         
+            <li><a href="#"><i class="ion-social-github social-github"></i></a></li>
+            <li><a href="#"><i class="ion-social-twitter social-twitter"></i></a></li>
+            <li><a href="#"><i class="ion-social-google social-google"></i></a></li>
+            <li><a href="#"><i class="ion-social-instagram social-instagram"></i></a></li>
+            <li><a href="#"><i class="ion-social-linkedin social-linkedin"></i></a></li>
+          </ul>
+  
+      
+  
+          <ul class="footer-nav">
+  
+            <li><a href="#">BLOG &nbsp;</a></li>
+            <li><a href="index.html">HOME &nbsp;</a></li>
+            <li><a href="contact.html">CONTACT &nbsp;</a></li>
+            <li><a href="#">ABOUT &nbsp;</a></li>
+            <li><a href="portfolio.html">PORTFOLIO &nbsp;</a></li>
+            <li><a href="resume.html">RESUME &nbsp;</a></li>  
+            
+          </ul>
+  
+          <div class="row">
+            <p class="footer-last">
+                Copyright &copy; 2020 by SurajKarki. All rights reserved.
+            </p>
         </div>
+  
+  
+       
+  
+        </div>
+  
+    </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.js"></script>  
+  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 
 
-     
 
-      </div>
 
-  </footer>
 
 
 

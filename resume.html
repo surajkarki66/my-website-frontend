@@ -7,8 +7,8 @@
     <meta name="description" content="This is the personal website of SurajKarki"/>
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
@@ -27,18 +27,19 @@
           
       <nav>
         <div class="row">
-          <img src="resources/img/customer-3.jpg" alt="Omnifood logo" class="logo">
-       <!--- <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black"> -->
+          <img src="resources/img/customer-3.jpg" alt="Suraj logo" class="logo">
+          <img src="resources/img/customer-3.jpg" alt="Suraj logo" class="logo-black">
           <ul class="main-nav js--main-nav">
 
-              <li><a href="index.html">Home</a></li> <!-- navbar is the collection of links-->
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Resume</a></li>
+              <li><a href="index.html">Home</a></li> 
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="resume.html">Resume</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
 
 
           </ul>
+          <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
 
 
 
@@ -68,28 +69,25 @@
               
                 <h1 class="resume-heading">
                   <img src="resources/img/quote.png" class="logo-blue"></img>
-                  dig a little deeper
+                  Dig a Little Deeper
+                  <h1 style="font-size: 30px;">
+                    To
+                  <span class="typer" id="main" data-words="Know Me,& My Skills" data-colors="white " data-delay="100" data-deleteDelay="300"></span>
+                    <span class="cursor" data-owner="main"></span>
+                    </h1>
                 </h1>
-         
-
-                    <p class="logo-resume">
-                      <img src="resources/img/python.png" alt="surajkarki logo">
-                      <img src="resources/img/js.png" alt="surajkarki logo">
-                      <img src="resources/img/postgresql.png" alt="surajkarki logo">
-                      <img src="resources/img/mongodb.png" alt="surajkarki logo">
-                    </p>
-
+                
           <p class="resume-btn">
-            <a href="#" class="btn btn-full resume">Download Resume</a>
-        </p>
+            <a href="#" class="btn btn-full resume">DOWNLOAD RESUME<i style="margin-left: 10px;margin-top: 10px; font-size: 150%;" class="ion-android-download"></i></a>
+         </p>
 
         </div>
 
      </header>
-     <section class="section-resume js--section-resume" id="resume">
+     <section class="section-resume js--section-motivation" id="resume">
 
   
-      <div class="row">
+      <div class="row js--wp-5">
           <div class="col span-1-of-3">
               <div class="plan-box js--wp-4">
                   <div>
@@ -101,27 +99,7 @@
               </div>
           </div>
 
-          <div class="col span-1-of-3">
-              <div class="plan-box">
-                  <div>
-                      <h2>Day-To-Day-Comfirt</h2>
-                  </div>
-                  <div>
-                      <ul>
-                          <li>Sass</li>
-                          <li>Javascript / jquery</li>
-                          <li>Python</li>
-                          <li>Version Control( GIT )</li>
-                          <li>Bootstrap</li>
-
-                          
-
-                      </ul>
-
-                  </div>
-              
-              </div>
-          </div>
+        
 
           <div class="col span-1-of-3">
               <div class="plan-box">
@@ -130,22 +108,63 @@
                   </div>
                   <div>
                       <ul>
-                        <li>Python / Django</li>
-                        <li>Python / Web Scraping</li>
-                        <li>Python / Automation</li>
-                        <li>Python / Machine Learning</li>
-                        <li>Javascript / React(limited)</li>
-                        <li>Javascript / Node.js(limited)</li>
-                        <li>Javascript / Express.js(limited)</li>
-                        <li>REST APIs</li>
-                        <li>SQL / PostgreSql</li>
-                        <li>NoSQL / Mongodb</li>
+                        <li style="text-align: center;"><i class="ion-social-python" style="margin-right:10px ;"></i>PYTHON<i class="ion-social-python" style="margin-left: 10px;"></i></li>
+                        <ul>
+                            <li style="margin-left:30px; font-size: 15px;color: black;">1) Automation</li>
+                            <li style="margin-left:30px; font-size: 15px;color: black;">2) Web Scraping</li>
+                            <li style="margin-left:30px; font-size: 15px;color: black;">3) Object Oriented</li>
+                            <li style="margin-left:30px; font-size: 15px;color: black;">4) Django / Django REST</li>
+                            <li style="margin-left:30px; font-size: 15px;color: black;">5) Machine Learning</li>
+
+                        </ul>
+                        
                       </ul>
 
                   </div>
+                  <div>
+                    <ul>
+                      <li style="text-align: center;"><i class="ion-social-javascript" style="margin-right:10px ;"></i>JAVASCRIPT<i class="ion-social-javascript" style="margin-left: 10px;"></i></li>
+                      <ul>
+                          <li style="margin-left:30px; font-size: 15px;color: black;">1) Object Oriented</li>
+                          <li style="margin-left:30px; font-size: 15px;color: black;">2) Jquery</li>
+                          <li style="margin-left:30px; font-size: 15px;color: black;">3) React.js</li>
+                          <li style="margin-left:30px; font-size: 15px;color: black;">4) Node.js</li>
+                          <li style="margin-left:30px; font-size: 15px;color: black;">5) Express.js</li>
+
+                      </ul>
+                      
+                    </ul>
+
+                </div>
                  
               </div>
           </div>
+
+          <div class="col span-1-of-3">
+            <div class="plan-box">
+                <div>
+                  <p style="text-align: center;">
+                    <h2>Experience</h2>
+                  </p>
+                </div>
+                <div>
+                    <ul>
+                      <li style="text-align: center;">OTHER TECH</li>
+                      <ul>
+                          <li style="margin-left:30px; font-size: 15px;color: black;">1) PostgreSQL</li>
+                          <li style="margin-left:30px; font-size: 15px;color: black;">2) Mongodb</li>
+                          <li style="margin-left:30px; font-size: 15px;color: black;">3) Docker</li>
+                          
+
+                      </ul>
+                      
+                    </ul>
+
+                </div>
+               
+               
+            </div>
+        </div>
       </div>
 
 
@@ -155,45 +174,57 @@
 
 
 
-    <footer>
+    
+  <footer>
+
+    <div class="row">
+      
+      <ul class="social-links">
+     
+        <li><a href="#"><i class="ion-social-github social-github"></i></a></li>
+        <li><a href="#"><i class="ion-social-twitter social-twitter"></i></a></li>
+        <li><a href="#"><i class="ion-social-google social-google"></i></a></li>
+        <li><a href="#"><i class="ion-social-instagram social-instagram"></i></a></li>
+        <li><a href="#"><i class="ion-social-linkedin social-linkedin"></i></a></li>
+      </ul>
+
+  
+
+      <ul class="footer-nav">
+
+        <li><a href="#">BLOG &nbsp;</a></li>
+        <li><a href="index.html">HOME &nbsp;</a></li>
+        <li><a href="contact.html">CONTACT &nbsp;</a></li>
+        <li><a href="#">ABOUT &nbsp;</a></li>
+        <li><a href="portfolio.html">PORTFOLIO &nbsp;</a></li>
+        <li><a href="resume.html">RESUME &nbsp;</a></li>  
+        
+      </ul>
 
       <div class="row">
-        <ul class="social-links">
-       
-          <li><a href="#"><img class="social-github" src="resources/img/github.png"></img></a></li>
-          <li><a href="#"><img class="social-instagram" src="resources/img/instagram.png"></img></a></li>
-          <li><a href="#"><img class="social-google" src="resources/img/gmail-logo.png"></img></a></li>
-          <li><a href="#"><img class="social-twitter" src="resources/img/twitter.png"></img></a></li>
-          <li><a href="#"><img class="social-linkedin" src="resources/img/linkedin.png"></img></a></li>
-
-        </ul>
-
-        <ul class="footer-nav-first">
-
-          <li><a href="#">BLOG &nbsp;</a></li>
-          <li><a href="#">HOME &nbsp;</a></li>
-          <li><a href="#">CONTACT &nbsp;</a></li>
-          <li><a href="#">ABOUT &nbsp;</a></li>
-          <li><a href="#">PORTFOLIO &nbsp;</a></li>
-          <li><a href="#">RESUME &nbsp;</a></li>  
-          
-        </ul>
-
-
-
-
-        <div class="row">
-          <p class="footer-last">
-              Copyright &copy; 2020 by SurajKarki. All rights reserved.
-          </p>
-        </div>
-
-
-     
-
+        <p class="footer-last">
+            Copyright &copy; 2020 by SurajKarki. All rights reserved.
+        </p>
       </div>
 
-  </footer>
+
+   
+
+    </div>
+
+</footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.js"></script>  
+  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
+
+
+
 
 
 

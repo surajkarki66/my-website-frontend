@@ -95,7 +95,12 @@ h3 {
 
 
 
-/* Paragraphs */
+/* ----------------------------------------------------- */
+/* -------- Paragraphs--------*/
+/* -----------------------------------------------------*/
+
+
+
 
 .long-copy {
     line-height: 145%;
@@ -110,7 +115,12 @@ h3 {
 }   
 
 
- /* Header */
+
+/* ----------------------------------------------------- */
+/* -------- Header--------*/
+/* -----------------------------------------------------*/
+
+
 
 
 header {    
@@ -145,12 +155,14 @@ header {
 }
 .hero-text-box h1 {
     position: relative;
-    bottom: 70px;
-    margin-bottom: 4%;
+    bottom: 130px;
     text-align: center;
     font-family:'Girassol', 'Arial';
     color: white;
+    text-transform: none;
  }
+
+
 
 
 
@@ -189,9 +201,12 @@ input[type=submit]{
 .btn-full:visited,
 input[type=submit]{
     position: relative;
+
     color: #22bbe5;
     border: 1px solid #0094ff;
     font-size: 15px;
+    bottom: 50px;
+
 }
 
 
@@ -207,7 +222,6 @@ input[type=submit]{
 
 .btn-question:link,
 .btn-question:visited {
-    position: relative;
     color: #fff;
     margin-top: 8%;
     border: 1px solid #22bbe5;
@@ -228,9 +242,7 @@ input[type=submit]{
 
 .btn-life:link,
 .btn-life:visited {
-    position: relative;
     color:#22bbe5;
-    left: 38%;
     border: 1px solid #22bbe5;
     font-size: 16px;
 
@@ -254,8 +266,7 @@ input[type=submit]{
     border: 1px solid black;
     font-size: 15px;
     top: 60px;
-    margin-left: 450px;
-    margin-top: 10px;
+   
     
 }
 
@@ -268,7 +279,11 @@ input[type=submit]{
 
 
 
-/* Main navi */
+/* ----------------------------------------------------- */
+/* --------Main-Nav--------*/
+/* -----------------------------------------------------*/
+
+
 
 nav {
     text-align: center;
@@ -292,7 +307,7 @@ nav {
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
-    -webkit-transition: border-bottom 0.2s;
+    
     transition: border-bottom 0.2s;
 }
 
@@ -303,7 +318,56 @@ nav {
 
 
 
-/* Icons */
+
+/* ----------------------------------------------------- */
+/* -------- Sticky nav--------*/
+/* -----------------------------------------------------*/
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0 1px 1px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 20px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: white;
+   
+
+}
+
+
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
+
+
+/* Mobile nav */
+.mobile-nav-icon {
+    float: right ;
+    margin-top: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+/* ----------------------------------------------------- */
+/* -------- Icons--------*/
+/* -----------------------------------------------------*/
+
+
+
 
 .logo{
     height: 140px;
@@ -316,16 +380,33 @@ nav {
 
 }
     
-
-
+.logo-black {
+    display: none;  
+    height: 60px;
+    width: auto;        
+    float: left;
+    margin: 5px 0;
+    border-radius: 20px;
+}
 
 
 .logo-blue {
     left: 50px;
     height: 30px;
     width: auto;
-    margin: 5px 0;
+    margin: 5px;
+    color: #22bbe5;
+    
 }
+
+.logo-blog {
+    position: relative;
+   font-size: 250%;
+   bottom: 30px;
+   color: black;
+}
+
+
 
 
 /* Motivation */
@@ -350,6 +431,27 @@ nav {
     width: auto;
     border-radius: 10px;
 }
+.js img:hover {
+    
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
 
 
 .name-text {
@@ -379,6 +481,8 @@ nav {
 }
 
 
+
+
 /* Help */
 
 .section-help {
@@ -389,9 +493,11 @@ nav {
 }
 
 .row h3 {
+    position: relative;
     font-family: 'Lato' , 'Arial', sans-serif;
     color: white;
     text-align: center;
+    bottom: 30px;
 }
 
 .row h1 {
@@ -400,15 +506,14 @@ nav {
 }
 
 .icon-question {
-    height: 50px;
-    position: relative;
-    width: auto;
-    left: 48%;
-    margin-bottom: 20px;
-    margin-top: 1px;
-    bottom: 20px;
+    font-size: 300%;
     display: block;
+    color: #22bbe5;
+    margin-bottom: 50px;
+
 }
+
+
 
 /* Life */
 
@@ -467,6 +572,8 @@ nav {
     text-align: center;
 
 }
+
+
 
 
 /* blog */
@@ -529,31 +636,70 @@ nav {
     text-align: center;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+    
+  }
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+  }
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #0094ff;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    border-radius: 10px;
+}
+
+.overlay h2 {
+    font-family: 'Girassol', 'Arial';   
+}
+
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+
+
 
 
 /* Footer */
 
 
 footer {
-    background-color: rgb(49, 47, 47);
+    background-color: black;    
     padding: 50px;
     font-size: 80%;
     
 }
 
-.footer-nav-first {
+.footer-nav{
     text-align: center;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
-.footer-nav-first li {
+.footer-nav li {
     display: inline-block;
     margin-right: 20px;
 
 }
 
-.footer-nav-first li a:link,
-.footer-nav-first li a:visited {
+.footer-nav li a:link,
+.footer-nav li a:visited {
     text-decoration: none;
     border: 0;
     color: white;
@@ -565,8 +711,8 @@ footer {
 }
 
 
-.footer-nav-first li a:hover,
-.footer-nav-first li a:active {
+.footer-nav li a:hover,
+.footer-nav li a:active {
     text-decoration: none;
     border: 0;
     color: #0094ff;
@@ -581,6 +727,7 @@ footer {
 }
 
 
+
 .social-links li {
     display: inline-block;
     margin-right: 20px;
@@ -588,57 +735,48 @@ footer {
 }
 
 
-.social-links img {
-    height: 50px;
-    position: relative;
-    width: auto;
-    bottom: 20px;
-    display: block;
-   
-    
-}
-
 .social-links li a:link,
 .social-links li a:visited {
     text-decoration: none;
     border: 0;
-    color: rgb(63, 60, 60);
+    color: white;
     transition: color 0.2s;
-    font-size: 160%;
+    font-size: 230%;
 
 }
 
-.social-links li a img {
+.ion-social-github,
+.ion-social-instagram,
+.ion-social-google,
+.ion-social-twitter,
+.ion-social-linkedin {
     transition: color 0.2s;
-    border: 1px solid black;
-    border-radius: 30px;
-
 }
+
 
 .social-instagram:hover {
-    background-color:  #458eff;
-    border:1px solid  #fb3958;
+    color:  #458eff;
+   
 
 }
 
 .social-github:hover {
-    background-color: white;
-    border-radius: 18px;
+   
+   color: white;
 }
 
 .social-google:hover {
-    background-color: #c02626;
-    border:1px solid white;
+    color: #c02626;
+    
 }
 
 .social-twitter:hover {
-    background-color: white;
-    border:1px solid white;
+    color: #22bbe5;
+    border-radius: 10px;
 }
 
 .social-linkedin:hover {
-    background-color: white;
-    border:1px solid white;
+    color: #22bbe5;
 
 }
 
@@ -646,9 +784,10 @@ footer {
     text-align: center;
     margin-top:50px;
     font-family:'Lato' , 'Arial', sans-serif;   
-    color: black;
+    color: white;
 
 }
+
 
 
 
@@ -768,7 +907,7 @@ footer {
 
 .text {
     background-color: #0094ff;
-    font-size: 16px;
+    font-size: 15px;
     padding: 16px 32px;
     border-radius: 4px;
 }
@@ -782,6 +921,7 @@ footer {
 .section-portfolio .row{
     margin-top: 15px;
 }
+
 
 
 
@@ -806,7 +946,7 @@ footer {
 
 .resume-heading {
     position: relative; 
-    color: #e5e8e6;
+    color: #0094ff;
     text-transform: none;
     font-family: 'Girassol', 'Arial';
    
@@ -971,9 +1111,39 @@ input[type=checkbox] {
 input[type=submit] {
     color: black;
     background-color: white;
+    position: relative;
+    top: 5px;
 }
 
 .back {
     background: #ddebe2;
     border-radius: 10px;
+}
+
+
+
+
+/* ----------------------------------------------------- */
+/* -------- Animations --------*/
+/* -----------------------------------------------------*/
+
+
+.js--wp-1,
+.js--wp-2,  /* for fade in */
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated ,
+.js--wp-3.animated{
+    opacity: 1;
+
 }

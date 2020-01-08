@@ -8,12 +8,13 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+   
     <title>SurajKarki</title>
 
 
@@ -27,19 +28,22 @@
         
       <nav>
         <div class="row">
-          <img src="resources/img/customer-3.jpg" alt="Omnifood logo" class="logo">
-       <!--- <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black"> -->
+          <img src="resources/img/customer-3.jpg" alt="suraj avatar" class="logo">
+          <img src="resources/img/customer-3.jpg" alt="suraj avatar" class="logo-black">
           <ul class="main-nav js--main-nav">
 
-              <li><a href="#">Home</a></li> <!-- navbar is the collection of links-->
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Resume</a></li>
+              <li><a href="index.html">Home</a></li> 
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="resume.html">Resume</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
+             
 
 
           </ul>
-
+          <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i>
+          </a>
+         
 
 
       </div>
@@ -64,18 +68,29 @@
 
          
           <div class="hero-text-box">
+          
+           
+
+            
            
                 <h1>
+                  <i class="ion-quote logo-blue"></i>
+
+               
+                  Hey! Its SurajKarki
+                    
+                
                  
-                  <img src="resources/img/quote.png" class="logo-blue"></img>
-                  Hey! Its Suraj Karki
-                  <img src="resources/img/quote 2.png" class="logo-blue"></img>
-              
                 </h1>
-               <h2>(Proffestional Software Developer & Machine Learning Enthusiastic)</h2>
+                <h1 style="position: relative; bottom: 85px;">
+                  I am a
+                <span class="typer" id="main" data-words="Software Developer,Machine Learning Engineer" data-colors="red, #22bbe5" data-delay="100" data-deleteDelay="300"></span>
+                    <span class="cursor" data-owner="main"></span>
+                    </h1>
+               <h2>(Welcome To Official Website of SurajKarki)</h2>
                <p style="text-align: center;">
-               <a class="btn btn-full" href="#">HIRE ME</a>
-              </p>
+               <a class="btn btn-full js--scroll-to-plans" href="#">HIRE ME</a>
+               </p>
               
                  
                  
@@ -85,27 +100,30 @@
 
      </header>
 
-     <section class="section-motivation">
-      <div class="row">
+     <section class="section-motivation js--section-motivation" id="motivation">
+      <div class="row js--wp-1">
           <h2>Motivation of the day for me</h2>
       </div>
       <div class="row">
-              <div class="row">
-                  <div class="col span-1-of-3">  
+              <div class="row js">
+                  <div class="col span-1-of-3 js--wp-2">  
 
-                    <img src="resources/img/author.jpg" alt="Author" class="author">
+                    <a target="_blank" href="resources/img/author.jpg">
+                      <img src="resources/img/author.jpg" alt="Author" class="author">
                       
+                    </a>
+                   
                   </div>
                   <div class="col span-2-of-3">
                     
-                      <p class="long-copy"><img src="resources/img/quote.png" class="logo-blue"></img>
+                      <p class="long-copy js--wp-3"><img src="resources/img/quote.png" class="logo-blue"></img>
                          A computer is like air condtioning,
                          if you open window it becomes useless
                          <img src="resources/img/quote 2.png" class="logo-blue"></img>
                         
                       </p>
 
-                      <p class="name-text"><img src="resources/img/pen.png" class="pen"></img>
+                      <p class="name-text js--wp-4"><img src="resources/img/pen.png" class="pen"></img>
                         Linus Torvalds
                       </p>
 
@@ -121,11 +139,14 @@
   <section class="section-help">
 
 
-    <div class="row">
-      <img src="resources/img/question.png" alt="help" class="icon-question">
-    </div>
+    <p style="text-align: center;">
 
-    <div class="row">
+      <i class="ion-help-circled icon-question"></i>
+
+               
+    </p>
+
+    <div class="row js--wp-5">
 
   
       <h3>FULL TIME SOFTWARE DEVELOPER
@@ -139,7 +160,7 @@
      
     
 
-    <div class="row">
+    <div class="row js--wp-5">
 
   
       <h1>Need help from a Software developer? Let’s discuss your needs in detail.</h1>
@@ -150,7 +171,7 @@
     <div class="row">
 
       <p style="text-align: center;">
-         <a class="btn btn-question" href="#">I`M HERE TO HELP YOU</a>
+         <a class="btn btn-question js--wp-5" href="#">I`M HERE TO HELP YOU</a>
       </p>
 
 
@@ -164,20 +185,44 @@
 
   <section class="section-life">
 
-    <div class="row">
+    <div class="row js--wp-6">
 
   
       <h1>My life as software developer</h1>
 
 
     </div>
-        <ul class="life-showcase clearfix">  <!--First row-->
+        <ul class="life-showcase clearfix">  
 
             <li>
-                <figure class="life-photo">   <!--A container for puting images-->
+                <figure class="life-photo">   
 
-                    <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+                  <a target="_blank" href="resources/img/1.jpg">
+                    <img src="resources/img/1.jpg" alt="suraj-life">
+                    
+                  </a>
+                     
+                </figure>
+            </li>
 
+            <li>
+                <figure class="life-photo">  
+
+                  <a target="_blank" href="resources/img/2.jpg">
+                    <img src="resources/img/2.jpg" alt="suraj-life">
+                    
+                  </a>
+
+                     
+                </figure>
+            </li>
+
+            <li>
+                <figure class="life-photo">   
+                  <a target="_blank" href="resources/img/3.jpg">
+                    <img src="resources/img/3.jpg" alt="suraj-life">
+                    
+                  </a>
                      
                 </figure>
             </li>
@@ -185,26 +230,10 @@
             <li>
                 <figure class="life-photo">   <!--A container for puting images-->
 
-                    <img src="resources/img/2.jpg" alt="Simple Italian pizza with cherry tomato">
-
-                     
-                </figure>
-            </li>
-
-            <li>
-                <figure class="life-photo">   <!--A container for puting images-->
-
-                    <img src="resources/img/3.jpg" alt="Chicken breast stick">
-
-                     
-                </figure>
-            </li>
-
-            <li>
-                <figure class="life-photo">   <!--A container for puting images-->
-
-                    <img src="resources/img/4.jpg" alt="Autumn pumpkin soup">
-
+                  <a target="_blank" href="resources/img/4.jpg">
+                    <img src="resources/img/4.jpg" alt="suraj-life">
+                    
+                  </a>
                      
                 </figure>
             </li>
@@ -217,7 +246,10 @@
             <li>
                 <figure class="life-photo">   <!--A container for puting images-->
 
-                    <img src="resources/img/5.jpg" alt="Paleo beef steak with vegetables">
+                  <a target="_blank" href="resources/img/5.jpg">
+                    <img src="resources/img/5.jpg"alt="suraj-life">
+                    
+                  </a>
 
                      
                 </figure>
@@ -226,8 +258,10 @@
             <li>
                 <figure class="life-photo">   <!--A container for puting images-->
 
-                    <img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
-
+                  <a target="_blank" href="resources/img/6.jpg">
+                    <img src="resources/img/6.jpg" alt="suraj-life">
+                    
+                  </a>
                      
                 </figure>
             </li>
@@ -235,8 +269,10 @@
             <li>
                 <figure class="life-photo">   <!--A container for puting images-->
 
-                    <img src="resources/img/7.jpg" alt="Burger with cheddar and bacon">
-
+                  <a target="_blank" href="resources/img/7.jpg">
+                    <img src="resources/img/7.jpg" alt="suraj-life">
+                    
+                  </a>
                      
                 </figure>
             </li>
@@ -244,8 +280,10 @@
             <li>
                 <figure class="life-photo">   <!--A container for puting images-->
 
-                    <img src="resources/img/8.jpg" alt="Granola with cherries and strawberries">
-
+                  <a target="_blank" href="resources/img/8.jpg">
+                    <img src="resources/img/8.jpg" alt="suraj-life"">
+                    
+                  </a>
                      
                 </figure>
             </li>
@@ -255,9 +293,13 @@
 
         <div class="row">
 
+          <p style="text-align: center;">
+
 
           <a class="btn btn-life" href="#">LEARN MORE ABOUT ME</a>
                     
+
+        </p>
     
     
     
@@ -271,7 +313,11 @@
     </section>
 
     <section class="section-blog">
-      <div class="row">
+      <p style="text-align: center;">
+        <i class="ion-social-rss logo-blog"></i>
+        </p>
+      <div class="row js--wp-7">
+      
         <h1>My latest blog posts</h1>
       </div>
 
@@ -282,7 +328,20 @@
           <figure class="blog-photo">
       
 
-           <a href="#"><img src="resources/img/7.jpg" alt="blog"></a>
+            <div class="container">
+
+              <a href="#"><img src="resources/img/7.jpg" alt="blog" class="image"></a>
+              <div class="overlay">
+               <h2 style="text-align: center; margin:15px;">How to Write Catchy Headlines and Blog Titles Your Readers Can't Resist</h2>
+               <p style="text-align: center;">
+               <a class="btn btn-blog" href="#">VIEW</a>
+  
+              </p>
+              </div>
+  
+  
+            </div>
+          
           
           </figure>
 
@@ -297,7 +356,20 @@
           <figure class="blog-photo">
         
 
-             <a href="#"><img src="resources/img/7.jpg" alt="blog"></a>
+            <div class="container">
+
+              <a href="#"><img src="resources/img/7.jpg" alt="blog" class="image"></a>
+              <div class="overlay">
+               <h2 style="text-align: center; margin:15px;">How to Write Catchy Headlines and Blog Titles Your Readers Can't Resist</h2>
+               <p style="text-align: center;">
+               <a class="btn btn-blog" href="#">VIEW</a>
+  
+              </p>
+              </div>
+  
+  
+            </div>
+          
 
           </figure>
          
@@ -308,19 +380,32 @@
         </div>
         <div class="col span-1-of-3 blog">
           <figure class="blog-photo">
-         
+            <div class="container">
 
-            <a href="#"><img src="resources/img/7.jpg" alt="blog"></a>
-
+              <a href="#"><img src="resources/img/7.jpg" alt="blog" class="image"></a>
+              <div class="overlay">
+               <h2 style="text-align: center; margin:15px;">How to Write Catchy Headlines and Blog Titles Your Readers Can't Resist</h2>
+               <p style="text-align: center;">
+               <a class="btn btn-blog" href="#">VIEW</a>
+  
+              </p>
+              </div>
+  
+  
+            </div>
+          
              
           </figure>
          
         </div>
-        <div class="row">
+        
 
-
-          <a class="btn btn-blog" href="#">VIEW MORE BLOG</a>
+      
         </div>
+
+        <p style="text-align: center;">
+          <a class="btn btn-blog" href="#">VIEW MORE BLOG</a>
+        </p>
 
       </div>
 
@@ -334,24 +419,26 @@
     <footer>
 
       <div class="row">
+        
         <ul class="social-links">
        
-          <li><a href="#"><img class="social-github" src="resources/img/github.png"></img></a></li>
-          <li><a href="#"><img class="social-instagram" src="resources/img/instagram.png"></img></a></li>
-          <li><a href="#"><img class="social-google" src="resources/img/gmail-logo.png"></img></a></li>
-          <li><a href="#"><img class="social-twitter" src="resources/img/twitter.png"></img></a></li>
-          <li><a href="#"><img class="social-linkedin" src="resources/img/linkedin.png"></img></a></li>
-
+          <li><a href="#"><i class="ion-social-github social-github"></i></a></li>
+          <li><a href="#"><i class="ion-social-twitter social-twitter"></i></a></li>
+          <li><a href="#"><i class="ion-social-google social-google"></i></a></li>
+          <li><a href="#"><i class="ion-social-instagram social-instagram"></i></a></li>
+          <li><a href="#"><i class="ion-social-linkedin social-linkedin"></i></a></li>
         </ul>
 
-        <ul class="footer-nav-first">
+    
+
+        <ul class="footer-nav">
 
           <li><a href="#">BLOG &nbsp;</a></li>
-          <li><a href="#">HOME &nbsp;</a></li>
-          <li><a href="#">CONTACT &nbsp;</a></li>
+          <li><a href="index.html">HOME &nbsp;</a></li>
+          <li><a href="contact.html">CONTACT &nbsp;</a></li>
           <li><a href="#">ABOUT &nbsp;</a></li>
-          <li><a href="#">PORTFOLIO &nbsp;</a></li>
-          <li><a href="#">RESUME &nbsp;</a></li>  
+          <li><a href="portfolio.html">PORTFOLIO &nbsp;</a></li>
+          <li><a href="resume.html">RESUME &nbsp;</a></li>  
           
         </ul>
 
@@ -368,6 +455,16 @@
 
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.js"></script> 
+  
+  
+  
+  
 
 
 
@@ -382,5 +479,6 @@
 </body>
        
 </html>
+
 
 

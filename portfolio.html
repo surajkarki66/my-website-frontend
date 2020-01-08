@@ -7,8 +7,8 @@
     <meta name="description" content="This is the personal website of SurajKarki"/>
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
@@ -27,18 +27,22 @@
         
       <nav>
         <div class="row">
-          <img src="resources/img/customer-3.jpg" alt="Omnifood logo" class="logo">
-       <!--- <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black"> -->
+          <img src="resources/img/customer-3.jpg" alt="Suraj avatar" class="logo">
+          <img src="resources/img/customer-3.jpg" alt="Suraj avatar" class="logo-black"> 
           <ul class="main-nav js--main-nav">
 
-              <li><a href="#">Home</a></li> <!-- navbar is the collection of links-->
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Resume</a></li>
+              <li><a href="index.html">Home</a></li> 
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="resume.html">Resume</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
 
 
           </ul>
+          <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i>
+          </a>
+
+
 
 
 
@@ -68,13 +72,11 @@
               
                 <h1 class="portfolio-heading">
                   <img src="resources/img/quote.png" class="logo-blue"></img>
-                  Hey! Its Software Developer Portfolio
+                  Hey! Its Software Developer
+                  <span class="typer" id="main" data-words="Portfolio" data-colors="#22bbe5" data-delay="100" data-deleteDelay="300"></span>
+                    <span class="cursor" data-owner="main"></span>
                 </h1>
                 <h2>(Proffestional Software Developer & Machine Learning Enthusiastic)</h2>
-
-              <!----  <h2>Proffestional Software Developer & Machine Learning Enthusiastic</h2>
-                <a class="btn btn-full" href="#">HIRE ME</a>
-              -->
             
                
           </div>
@@ -82,10 +84,10 @@
      </header>
 
 
-     <section class="section-portfolio">
+     <section class="section-portfolio js--section-motivation">
 
 
-     <div class="row">
+     <div class="row js--wp-7">
         <h1 class="portfolio-text">I'm a dedicated Software Developer</h1>
         <h1 class="portfolio-text" style="color: #0094ff; font-size: 20px;">PROJECTS</h1>
      </div>
@@ -178,39 +180,37 @@
     </section>
     
 
-
     <footer>
 
       <div class="row">
+        
         <ul class="social-links">
        
-          <li><a href="#"><img class="social-github" src="resources/img/github.png"></img></a></li>
-          <li><a href="#"><img class="social-instagram" src="resources/img/instagram.png"></img></a></li>
-          <li><a href="#"><img class="social-google" src="resources/img/gmail-logo.png"></img></a></li>
-          <li><a href="#"><img class="social-twitter" src="resources/img/twitter.png"></img></a></li>
-          <li><a href="#"><img class="social-linkedin" src="resources/img/linkedin.png"></img></a></li>
-
+          <li><a href="#"><i class="ion-social-github social-github"></i></a></li>
+          <li><a href="#"><i class="ion-social-twitter social-twitter"></i></a></li>
+          <li><a href="#"><i class="ion-social-google social-google"></i></a></li>
+          <li><a href="#"><i class="ion-social-instagram social-instagram"></i></a></li>
+          <li><a href="#"><i class="ion-social-linkedin social-linkedin"></i></a></li>
         </ul>
 
-        <ul class="footer-nav-first">
+    
+
+        <ul class="footer-nav">
 
           <li><a href="#">BLOG &nbsp;</a></li>
-          <li><a href="#">HOME &nbsp;</a></li>
-          <li><a href="#">CONTACT &nbsp;</a></li>
+          <li><a href="index.html">HOME &nbsp;</a></li>
+          <li><a href="contact.html">CONTACT &nbsp;</a></li>
           <li><a href="#">ABOUT &nbsp;</a></li>
-          <li><a href="#">PORTFOLIO &nbsp;</a></li>
-          <li><a href="#">RESUME &nbsp;</a></li>  
+          <li><a href="portfolio.html">PORTFOLIO &nbsp;</a></li>
+          <li><a href="resume.html">RESUME &nbsp;</a></li>  
           
         </ul>
-
-
-
 
         <div class="row">
           <p class="footer-last">
               Copyright &copy; 2020 by SurajKarki. All rights reserved.
           </p>
-        </div>
+      </div>
 
 
      
@@ -218,6 +218,17 @@
       </div>
 
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.js"></script>  
+  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
+
+
+
+
 
 
 

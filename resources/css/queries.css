@@ -46,8 +46,7 @@
         border: 1px solid black;
         font-size: 15px;
         top: 60px;
-        margin-left: 240px;
-        margin-top: 10px;
+        
         
     }
 
@@ -61,11 +60,11 @@
 
     .btn-life:link,
     .btn-life:visited {
-        position: relative;
+       
         color:#22bbe5;
         border: 1px solid #22bbe5;
         font-size: 16px;
-        left: 240px;
+       
 
 
 
@@ -93,6 +92,7 @@
 
     body {font-size: 16px;}
     section {padding: 30px 0;}
+   
 
     .row,
     .hero-text-box {
@@ -109,7 +109,55 @@
     }
 
     .col {width: 100%;}  /* col stacked one by one */
-    .main-nav {display: none;}
+    .main-nav {float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+        padding: 5px 0;
+        display: none;}
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .mobile-nav-icon{
+        display: inline-block;
+
+    }
+
+    .mobile-nav-icon i{
+        font-size: 200%;    
+        margin-top: 10%;
+        color: white;
+      
+       
+    }
+
+    .nav-icon-close {
+        display: none;
+    }
+
+
+    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+    }
+
+  
+
+
+
+    .sticky .logo { display: none; }
+    .sticky .logo-black { display: block; }
+
     .logo {
         height: 120px;
         width: auto;
@@ -126,16 +174,7 @@
     }
 
         
-    .icon-question {
-        height: 40px;
-        position: relative;
-        width: auto;
-        left: 210px;
-        margin-bottom: 20px;
-        margin-top: 1px;
-        
-       
-    }
+    
 
     .section-help h1 {
         font-size: 25px;
@@ -162,11 +201,11 @@
 
     .btn-life:link,
     .btn-life:visited {
-        position: relative;
+       
         color:#22bbe5;
         border: 1px solid #22bbe5;
         font-size: 12px;
-        left: 128px;
+       
 
 
 
@@ -201,12 +240,10 @@
 
     .btn-blog:link,
     .btn-blog:visited {
-        position: relative;
+       
         font-size: 12px;
-        margin-left: 0px;
-        margin-top: 0px;
         top:20px;
-        left: 130px;
+       
     }
 
     .section-blog .row h1 {
@@ -288,19 +325,19 @@
 
     .btn-blog:link,
     .btn-blog:visited {
-        position: relative;
+    
         font-size: 12px;
         top:20px;
-        left: 70px;
+       
     }
 
     .btn-life:link,
     .btn-life:visited {
-        position: relative;
+        
         color:#22bbe5;
         border: 1px solid #22bbe5;
         font-size: 12px;
-        left: 70px;
+       
 
 
 
